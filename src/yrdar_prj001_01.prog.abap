@@ -3,13 +3,13 @@
 *&---------------------------------------------------------------------*
 *&
 *&---------------------------------------------------------------------*
-REPORT yrdar_rep_dacs_obj_id.
+REPORT yrdar_prj001_01.
 
-INCLUDE YRDAR_REP_DACS_OBJ_ID_TOP.
-INCLUDE YRDAR_REP_DACS_OBJ_ID_SEL.
-INCLUDE YRDAR_REP_DACS_OBJ_ID_FOM.
-INCLUDE YRDAR_REP_DACS_OBJ_ID_PBO.
-INCLUDE YRDAR_REP_DACS_OBJ_ID_PAI.
+INCLUDE yrdar_prj001_01_top.
+INCLUDE yrdar_prj001_01_sel.
+INCLUDE yrdar_prj001_01_fom.
+INCLUDE yrdar_prj001_01_pbo.
+INCLUDE yrdar_prj001_01_pai.
 
 START-OF-SELECTION.
   PERFORM init_prog.

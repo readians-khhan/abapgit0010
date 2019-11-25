@@ -27,16 +27,23 @@ MODULE user_command_0100 INPUT.
   CLEAR : ok_code.
 
   CASE lv_ok_code.
+    WHEN 'FC_HS_DES'.
+      go_0100_rep->mc_fc_hs_des( ).
+    WHEN 'FC_HS_DEV'.
+      go_0100_rep->mc_fc_hs_dev( ).
     WHEN 'FC_NEW'.
       go_0100_rep->mc_fc_new( ).
     WHEN 'FC_CHG'.
       go_0100_rep->mc_fc_chg( ).
-    WHEN 'FC_DETAIL'.
-      go_0100_rep->mc_fc_detail( ).
     WHEN 'FC_DEL'.
       go_0100_rep->mc_fc_del( ).
-
+    WHEN 'FC_MULTI'.
+      CALL  TRANSACTION 'ZRDAR_PRJ002'.
+      go_0100_rep->md_refresh_data( ).
+    WHEN 'FC_DOWN'.
+      go_0100_rep->mc_fc_down( ).
   ENDCASE.
+
   CLEAR : lv_ok_code.
 
 ENDMODULE.

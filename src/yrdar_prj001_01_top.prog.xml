@@ -3,18 +3,12 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <PROGDIR>
-    <NAME>YRDAR_REP_DACS_OBJ_ID_PBO</NAME>
+    <NAME>YRDAR_PRJ001_01_TOP</NAME>
     <SUBC>I</SUBC>
     <RLOAD>3</RLOAD>
+    <FIXPT>X</FIXPT>
     <UCCHECK>X</UCCHECK>
    </PROGDIR>
-   <TPOOL>
-    <item>
-     <ID>R</ID>
-     <ENTRY>PBO</ENTRY>
-     <LENGTH>3</LENGTH>
-    </item>
-   </TPOOL>
   </asx:values>
  </asx:abap>
 </abapGit>

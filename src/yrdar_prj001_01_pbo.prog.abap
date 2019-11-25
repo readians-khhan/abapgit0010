@@ -20,7 +20,7 @@ MODULE init_0100 OUTPUT.
 
   DATA : lt_controls TYPE zrday_scrfname VALUE IS INITIAL.
 
-  lt_controls = VALUE #( ( name = 'OBJ_ID' scrfname = 'CC_0100_ALV' dynnr = sy-dynnr repid = sy-repid ) ).
+  lt_controls = VALUE #( ( NAME = 'SPL01' scrfname = 'CC_0100_ALV_DEV' dynnr = sy-dynnr repid = sy-repid ) ).
 
   go_0100_rep->mb_init_scrobj( lt_controls[] ).
 
